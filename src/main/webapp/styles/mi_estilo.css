@@ -1,0 +1,125 @@
+:root{
+    --color-ppal: rgb(255,255,255);
+    --color-ticket: rgb(34,160,63);
+    --bg-gris-o: rgb(53,58,64);   
+    --color-sec: rgb(154,158,161);
+    --color-react: rgb(41,155,175);
+    --bt-2: rgb(150,201,62);
+    --bg-footer: rgb(28,56,70);  
+}
+
+/*Nav*/
+.bg-nav-gris{
+    background-color: var(--bg-gris-o);
+}
+
+.navbar{
+    --bs-navbar-color: var(--color-sec);
+    --bs-navbar-toggler-border-color:var(--color-sec);
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28254, 255, 253, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-focus-width: 0.1rem;
+}
+
+.navbar-nav{
+    --bs-nav-link-color: var(--color-sec);
+    --bs-navbar-active-color: var(--color-ppal); 
+}
+
+.nav-link:hover{
+    color: var(--color-ppal);  
+}
+
+.logo{
+    width: 90px;
+    height: 55px;
+}
+
+.navbar-nav .ticket{
+    --bs-nav-link-color: var(--color-ticket);    
+}
+
+.ticket .nav-link:hover{
+    color: var(--color-ppal);
+}
+
+.bg-btn-ticket{
+    background-color: var(--color-ticket);
+}
+
+.bg-btn-ticket:hover{
+    background-color: var(--color-ppal);
+    color: var(--color-ticket);
+    border-color: var(--color-ppal);
+}
+
+/*Sección presentación*/
+
+.presentacion{    
+    background-image: url("../media/ba1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.presentacion a{
+    text-decoration: none;
+    color: var(--color-ppal);    
+}
+
+.presentacion a:hover{
+    color: var(--color-ticket);
+}
+
+
+/*Sección oradores */
+
+.bg-react{
+    background-color: var(--color-react);    
+}
+
+/* Sección lugar y fecha */
+
+.bg-gris{
+    background-color: var(--bg-gris-o);
+}
+
+@media (max-width: 575.98px) {
+    .border-sm-left-none {
+        border-left: none !important; 
+        }
+    }
+    
+@media (max-width: 991.98px) {
+    .border-lg-left-none {
+        border-left: none !important; 
+    }
+}
+
+/* Sección formulario */
+
+.btn-verde{
+    background-color: var(--bt-2);
+    border: 1px solid var(--bt-2);
+}
+
+.btn-verde:hover{
+    background-color: var(--color-ppal);
+    color: var(--bt-2);
+    border: 1px solid var(--bt-2);
+}
+
+/* Footer */
+
+.footer{    
+    background-color: var(--bg-footer);
+}
+
+.footer ul{
+    list-style: none;
+}
+
+/*Sección Tickets */
+
+.contenedorTicket{
+    width: 55%;
+}
